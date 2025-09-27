@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(219, 121, 186));
+    color: black;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #684f0c, #af064c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.container .myself{
+    background: linear-gradient(90deg, #684f0c, #af064c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.navbardiv{
+    background: linear-gradient(to right, rgb(255,255,255), rgb(219, 121, 186));
+}
+.hbtn{
+    background-color: rgb(12, 19, 34);
+    color: white;
+    font-weight: 700;
+    transition: 0.2s linear; 
+}
+.hbtn:hover{
+    color: rgb(9, 9, 31);
+    border: 2px solid rgb(6, 4, 14);
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(5, 4, 24);
+}
+.image{
+    width: 60%;
+    border-radius: 60%;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.6);
+}
+.relative .order-1{
+    color: #0f172a;
+    background-color: transparent;
+        border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #131111f7, 1px 1px 40px #252530f7;
+
+}
+.myskills{
+    color: #0f172a;
+    background-color: transparent;
+        border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #131111f7, 1px 1px 40px #252530f7;
+}
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.2);
+}
+.mysee h3{
+    background: linear-gradient(50deg, #741233, #57360b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+.flex .btn{
+    background-color: rgb(12, 19, 34);
+    color: white;    
+    font-weight: 700;
+    transition: 0.2s linear;
+
+}
+
+.flex .btn:hover{
+    color: rgb(9, 9, 31);
+    border: 2px solid rgb(6, 4, 14);
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(5, 4, 24);
+   }
+.projectmore .btn{
+    background-color: rgb(12, 19, 34);
+    color: white;
+    font-weight: 700;
+    transition: 0.2s linear; 
+}
+.projectmore .btn:hover{
+    color: rgb(9, 9, 31);
+    border: 2px solid rgb(6, 4, 14);
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(5, 4, 24);
+}
+.space-y-6 .btn{
+    background-color: rgb(12, 19, 34);
+    color: white;
+}
+.space-y-6 .btn:hover{
+    color: rgb(9, 9, 31);
+    border: 2px solid rgb(6, 4, 14);
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(5, 4, 24);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #8b4503, #805802);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    
+}
+
+.active::after {
+    width: 100%;
+}
+
+
+
+.skill-bar {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #1e293b;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #c93858, #c0511dc2);
+    transition: width 1s ease-in-out;
+}
+.mt-16 span{
+    color: white;
+}
+.mt-16 .gradient-text{
+    color: black;
+}
+.project-card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    box-shadow: 5px 5px 15px rgba(2, 6, 23, 0.5), 
+                -5px -5px 15px rgba(30, 41, 59, 0.5);
+}
+
+.contact-input {
+    background-color: #770a3d;
+    border: 1px solid #790d48;
+    transition: all 0.3s ease;
+}
+
+.contact-input:focus {
+    border-color: #883a0d;
+    box-shadow: 0 0 0 2px rgba(177, 13, 103, 0.932);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #463105, #740e46);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgb(124, 8, 76);
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
