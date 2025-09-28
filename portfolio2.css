@@ -2,7 +2,7 @@
         
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(to right, rgb(255,255,255), rgb(219, 121, 186));
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(219, 121, 186));
     color: black;
 }
 
@@ -200,3 +200,24 @@ body {
 .floating {
     animation: float 3s ease-in-out infinite;
 }
+
+@media (max-width: 667px) {
+    .heading{
+    padding-top: 50px;
+    }
+
+    .relative .absolute{
+    visibility: hidden;
+        
+    }
+ .relative .order-1{
+width: 100%;
+ }
+ .relative .mb-8{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+ }
+
+  }
