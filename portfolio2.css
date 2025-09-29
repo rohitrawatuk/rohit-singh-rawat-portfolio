@@ -47,6 +47,13 @@ body {
     box-shadow: 1px 1px 20px #131111f7, 1px 1px 40px #252530f7;
 
 }
+.relative .order-1:hover{
+    background-color: rgb(12, 19, 34);
+    color: white;    
+    font-weight: 700;
+    transition: 0.2s linear;
+}
+
 .myskills{
     color: #0f172a;
     background-color: transparent;
@@ -186,6 +193,10 @@ body {
 
 .social-icon:hover {
     transform: translateY(-3px);
+}
+.collink:hover{
+    color: #a0dcee;
+
 }
 
 @keyframes float {
