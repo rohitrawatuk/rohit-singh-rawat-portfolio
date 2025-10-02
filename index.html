@@ -511,7 +511,7 @@
                 
                 <div>
                     <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
-                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6" autocomplete="off">
+                    <form id="myForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-6" autocomplete="off">
                        
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <input type="hidden" name="access_key" value="0d8561e7-d692-4fa5-ba63-c86efe8d4336">
@@ -572,6 +572,14 @@
     <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg hidden">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <script>
+        function clearForm() {
+          // Perform any submission logic here (e.g., sending data to a server)
+          // Then, reset the form
+          document.getElementById("myForm").reset();
+        }
+      </script>
     
     <script>
         // Mobile menu toggle
