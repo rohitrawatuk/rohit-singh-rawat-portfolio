@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">!-->
     <title>Rohit Rawat Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
@@ -509,24 +511,26 @@
                 
                 <div>
                     <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
-                    <form class="space-y-6">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                       
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <input type="hidden" name="access_key" value="0d8561e7-d692-4fa5-ba63-c86efe8d4336">
                             <div>
                                 <label for="name" class="block mb-2 font-medium">Your Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none bg-slate-200" required>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none bg-slate-200" required>
                             </div>
                             <div>
                                 <label for="email" class="block mb-2 font-medium">Your Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none bg-slate-200" required>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none bg-slate-200" required>
                             </div>
                         </div>
                         <div>
                             <label for="subject" class="block mb-2 font-medium">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none bg-slate-200" required>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none bg-slate-200" required>
                         </div>
                         <div>
                             <label for="message" class="block mb-2 font-medium">Message</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none bg-slate-200" required></textarea>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none bg-slate-200" required></textarea>
                         </div>
                         <button type="submit" class="px-8 py-3 rounded-full btn font-medium w-full">
                             Send Message <i class="fas fa-paper-plane ml-2"></i>
@@ -672,5 +676,3 @@
 </script>
 </body>
 </html>
-
-
