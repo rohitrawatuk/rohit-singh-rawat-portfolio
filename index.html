@@ -511,7 +511,7 @@
                 
                 <div>
                     <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
-                    <form id="myForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-6" autocomplete="off">
+                    <form id="myForm" onsubmit="clearForm(); return false;" action="https://api.web3forms.com/submit" method="POST" class="space-y-6" autocomplete="off">
                        
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <input type="hidden" name="access_key" value="0d8561e7-d692-4fa5-ba63-c86efe8d4336">
@@ -684,3 +684,4 @@
 </script>
 </body>
 </html>
+
