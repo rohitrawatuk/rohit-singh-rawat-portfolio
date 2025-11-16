@@ -528,7 +528,10 @@
                        
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <input type="hidden" name="access_key" value="0d8561e7-d692-4fa5-ba63-c86efe8d4336">
-                             <input type="hidden" name="form_id" value="Rohit_Portfolio_Message">
+                            <!-- Anti-Spam Required -->
+                           <input type="checkbox" name="botcheck" class="hidden" style="display:none !important">
+                            <!-- Your Custom ID -->
+                            <input type="hidden" name="form_id" value="Rohit_Portfolio_Message">
                             <div>
                                 <label for="name" class="block mb-2 font-medium">Your Name</label>
                                 <input type="text" id="name" name="name" autocomplete="off" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none bg-slate-200" required>
@@ -698,6 +701,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 </script>
 </body>
 </html>
+
 
 
 
